@@ -1,0 +1,20 @@
+<div>
+  <p>
+    <input type="text" placeholder="{{phstrInitials}}: "[(ngModel)]="participant.strInitials" />
+  </p>
+  <p>
+    <input type="text" placeholder="{{phstrName}}: " [(ngModel)]="participant.strName" />
+  </p>
+  <p>
+    <input type="text" placeholder="{{phstrAddress}}" [(ngModel)]="participant.strAddress" />
+  </p>
+  <p> 
+    <input type="text" placeholder="{{phstrPreferredLanguage}}" [(ngModel)]="participant.strPreferredLanguage" />
+  </p> 
+  <p> 
+      <button (click)="newHandler(participant)"> New </button>
+  </p>  
+  <p> 
+      {{status}}
+  </p>    
+</div>

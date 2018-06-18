@@ -1,0 +1,10 @@
+<div>
+  <ul class="list-group">
+    <li class="list-group-item active">
+     Participantes
+   </li>
+    <li class="list-group-item" *ngFor = "let participant of arrparticipant" (click)="clickParticipantHandler(participant)">
+      {{ participant.name }}
+    </li>
+  </ul>
+</div> 

@@ -1,0 +1,14 @@
+<div class="main">
+  <div class="row">
+    <div class="col-3">
+        <app-name-list
+        (outParticipant)="fromChildParticipantHandler($event)"
+        ></app-name-list>
+    </div>
+    <div class="col-7">
+        <app-detail
+        [InParticipant] = fromChildParticipant
+        ></app-detail>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,20 @@
+
+<div *ngIf="InParticipant.initials != '' ">
+        <ul class="list-group" *ngIf="InParticipant.initials != ''">
+          <li class = "list-group-item">
+                {{ InParticipant.initials }}
+          </li>
+          <li class = "list-group-item">
+                {{ InParticipant.name }}
+          </li>
+          <li class = "list-group-item">
+                {{ InParticipant.address }}
+          </li>
+          <li class = "list-group-item">
+                {{ InParticipant.preferredlanguage }}
+          </li>
+        </ul>
+        <p> 
+            <button (click)="deleteHandler(InParticipant.initials)">Eliminar participante</button>
+        </p> 
+</div> 
